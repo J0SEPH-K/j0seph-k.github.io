@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-menu]').forEach((button)=>button.addEventListener('click',()=>{document.querySelectorAll('[data-menu]').forEach((b)=>b.classList.toggle('is-active',b===button));document.querySelectorAll('.dish').forEach((dish)=>dish.hidden=button.dataset.menu!=='all'&&dish.dataset.kind!==button.dataset.menu)}));

@@ -1,0 +1,1 @@
+const answers={routine:'첫 상담에서 현재 사용하는 제품과 생활 루틴부터 함께 살펴봅니다.',treatment:'관리 단계와 시간, 비용 범위를 먼저 설명하고 선택을 도와드립니다.',first:'방문 전 상담 → 안내 → 동의 후 진행 순서로 차분히 도와드려요.'};document.querySelectorAll('[name="concern"]').forEach((radio)=>radio.addEventListener('change',()=>document.querySelector('[data-answer]').textContent=answers[radio.value]));

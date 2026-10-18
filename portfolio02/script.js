@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-day]').forEach((button)=>button.addEventListener('click',()=>{document.querySelectorAll('[data-day]').forEach((b)=>b.classList.toggle('selected',b===button));document.querySelectorAll('[data-slot]').forEach((slot)=>slot.hidden=slot.dataset.slot!==button.dataset.day)}));
